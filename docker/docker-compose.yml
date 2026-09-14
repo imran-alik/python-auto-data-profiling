@@ -1,0 +1,15 @@
+services:
+  profiler:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      args:
+        ONPREM_DATA_PATH: /data/inbound
+        REPORT_OUTPUT: /app/visualizations
+    volumes:
+      - ../data/source/samples:/data/inbound:ro
+      - ../visualizations:/app/visualizations
+      - ../data/evidence:/app/data/evidence
+    environment:
+      ONPREM_DATA_PATH: /data/inbound/telco_features_sample.csv
+      REPORT_OUTPUT: /app/visualizations

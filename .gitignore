@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.env
+env/.env
+data/sink/
+visualizations/*.html
+!visualizations/demo_profile_report.html
+medallion/output/
+*.db
+.DS_Store

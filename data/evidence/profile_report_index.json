@@ -1,0 +1,21 @@
+{
+  "reports": [
+    {
+      "run_name": "telco_sample",
+      "generated_at_utc": "2026-09-14T13:42:23.613419+00:00",
+      "report_path": "visualizations/profile_report_telco_sample_20260914T134223Z.html",
+      "demo_report": "visualizations/demo_profile_report.html",
+      "health_score": 98.55,
+      "row_count": 500
+    }
+  ],
+  "latest": {
+    "run_name": "telco_sample",
+    "generated_at_utc": "2026-09-14T13:42:23.613419+00:00",
+    "report_path": "visualizations/profile_report_telco_sample_20260914T134223Z.html",
+    "demo_report": "visualizations/demo_profile_report.html",
+    "health_score": 98.55,
+    "row_count": 500
+  },
+  "_note": "Full Plotly HTML reports are gitignored; demo_profile_report.html is a small committed shell."
+}

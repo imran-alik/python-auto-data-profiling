@@ -1,0 +1,41 @@
+{
+  "run_name": "telco_sample",
+  "generated_at_utc": "2026-09-14T13:42:23.613419+00:00",
+  "source": {
+    "path": "C:\\Users\\imran\\Documents\\Projects\\python-auto-data-profiling\\data\\source\\samples\\telco_features_sample.csv",
+    "size_bytes": 30635,
+    "row_count": 500
+  },
+  "freshness": {
+    "exists": true,
+    "path": "C:\\Users\\imran\\Documents\\Projects\\python-auto-data-profiling\\data\\source\\samples\\telco_features_sample.csv",
+    "modified_at_utc": "2026-09-14T13:41:56.949535+00:00",
+    "age_hours": 0.01,
+    "label": "fresh"
+  },
+  "row_count": 500,
+  "column_count": 8,
+  "health_score": 98.55,
+  "alert_count": 0,
+  "guardrails": {
+    "passed": true,
+    "violations": [],
+    "thresholds": {
+      "max_null_pct": 40.0,
+      "min_rows": 10
+    }
+  },
+  "report_path": "visualizations/profile_report_telco_sample_20260914T134223Z.html",
+  "medallion": {
+    "bronze": "medallion\\output\\bronze_profile.json",
+    "silver": "medallion\\output\\silver_cleaned_stats.json",
+    "gold": "medallion\\output\\gold_feature_recommendations.json"
+  },
+  "sql_case_columns": [
+    "tenure_months",
+    "monthly_charges",
+    "total_charges",
+    "data_usage_gb",
+    "churn"
+  ]
+}

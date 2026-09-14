@@ -1,0 +1,40 @@
+[project]
+name = "python-auto-data-profiling"
+version = "1.0.0"
+description = "Python-native auto EDA and feature-engineering profiler with interactive HTML output"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "plotly>=5.24",
+    "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["packages", "codebase"]
+include = ["profiler_core*", "auto_profiler*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["codebase", "packages"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["codebase", "packages", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"codebase/scripts/*.py" = ["E402"]

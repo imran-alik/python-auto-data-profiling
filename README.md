@@ -1,18 +1,13 @@
 # Python Auto Data Profiling
 
-Python-native auto EDA and feature-engineering profiler with interactive HTML output — a portfolio case study evolved from the R ecosystem.
+Python-native auto EDA and feature-engineering profiler with interactive HTML output — a portfolio case study with synthetic samples only ([COMPLIANCE.md](COMPLIANCE.md)).
 
-## Inspiration
-
-This project is inspired by [**R-Auto-Data-Profiling**](https://github.com/rao-anas-riaz/R-Auto-Data-Profiling) by [Rao Anas Riaz](https://github.com/rao-anas-riaz), which demonstrates comprehensive R-based data profiling and interactive report generation.
-
-**Our Python evolution adds:**
+**Highlights:**
 
 - Feature-engineering focus (quantile binning, SQL `CASE` export, stability hashes)
 - Reusable `profiler_core` guardrails (freshness, health, alerts)
 - Medallion-style outputs (bronze / silver / gold)
 - Plotly-powered standalone HTML reports (no server required)
-- Synthetic portfolio samples only — see [COMPLIANCE.md](COMPLIANCE.md)
 
 ## Quick start
 

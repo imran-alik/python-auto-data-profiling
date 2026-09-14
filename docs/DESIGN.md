@@ -28,6 +28,17 @@
 
 ---
 
+## 0.1 Data model & ERD
+
+Source feature table → profiling outputs → bin specs → SQL CASE export. Diagram style reference: [uber-data-engineering-mage-project/data_model](https://github.com/darshilparmar/uber-data-engineering-mage-project/blob/main/data_model.jpeg).
+
+| Artifact | Path |
+|---|---|
+| Full ERD + lineage | [docs/diagrams/DATA-MODEL.md](diagrams/DATA-MODEL.md) |
+| Column dictionary | [data-dictionary.md](../data-dictionary.md) |
+
+---
+
 ## 1. Problem statement
 
 ### 1.1 Business problem

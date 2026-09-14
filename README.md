@@ -32,6 +32,13 @@ python codebase/scripts/certify_profile_run.py
 pytest tests/ -q
 ```
 
+## Data model (ERD)
+
+Linked dataset diagrams (source → profile → bins → SQL), inspired by [Uber Mage data_model](https://github.com/darshilparmar/uber-data-engineering-mage-project/blob/main/data_model.jpeg):
+
+- **[docs/diagrams/DATA-MODEL.md](docs/diagrams/DATA-MODEL.md)** — full ERD + lineage
+- **[data-dictionary.md](data-dictionary.md)** — column definitions
+
 ## Project layout
 
 ```
